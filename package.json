@@ -1,0 +1,19 @@
+{
+  "name": "aadf",
+  "version": "1.0.0",
+  "description": "A wordpress site for the African American Directors Forum",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mknee123/aadf.git"
+  },
+  "author": "miranda knee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mknee123/aadf/issues"
+  },
+  "homepage": "https://github.com/mknee123/aadf#readme"
+}
