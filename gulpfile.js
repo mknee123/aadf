@@ -42,7 +42,7 @@ gulp.task('css', function() {
 
 //JS
 gulp.task('js', function() {
-  return gulp.src(['./js/*.js'])
+  return gulp.src(['./js/script.js'])
   .pipe(jshint())
   .pipe(jshint.reporter('default'))
   .pipe(concat('app.js'))
@@ -64,11 +64,12 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php'],
-    proxy: 'http://localhost',
+    proxy: 'http://localhost'
   });
   gulp.watch('./styles/**/*.css', ['css', reload ]);
   gulp.watch('./js/*.js', ['js', reload ]);
   gulp.watch('./images/src/*', ['images', reload ]);
+  gulp.watch('**/*').on('change', reload);
 });
 
 // default task
