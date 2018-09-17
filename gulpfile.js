@@ -69,7 +69,7 @@ gulp.task('watch', function() {
   gulp.watch('./styles/**/*.css', ['css', reload ]);
   gulp.watch('./js/*.js', ['js', reload ]);
   gulp.watch('./images/src/*', ['images', reload ]);
-  gulp.watch('**/*').on('change', reload);
+  //gulp.watch('**/*').on('change', browserSync.reload);
 });
 
 // default task
