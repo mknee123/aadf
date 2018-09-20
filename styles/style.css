@@ -70,6 +70,7 @@ body {
 	margin: 0;
 }
 
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -470,8 +471,8 @@ html {
 }
 
 body {
-	background: #fff;
-	/* Fallback for when there is no custom background color defined. */
+/*	background: #fff;
+	 Fallback for when there is no custom background color defined. */
 }
 
 hr {
@@ -726,6 +727,7 @@ a:hover, a:active {
 	width: 50%;
 }
 
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -801,8 +803,10 @@ a:hover, a:active {
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
+/* temporary till i fig out if i will use flex
 .site-header:before,
 .site-header:after,
+*/
 .site-content:before,
 .site-content:after,
 .site-footer:before,
@@ -989,5 +993,34 @@ object {
 --------------------------------------------------------------*/
 
 body {
-	background:lightgrey;
+	background:#f8f6f7;
+}
+
+.site {
+	padding: 1em;
+}
+/**** MK NAVIGATION ****/
+.site-header {
+	display: flex;
+	background: #f8f6f7;
+	align-items: center;
+	/*padding: .5em 1em;*/
+}
+.site-branding {
+	min-height: 65px;
+	background: #f8f6f7;
+}
+.main-navigation {
+	justify-content: flex-end;
+	display: flex;
+}
+.main-navigation li {
+	padding: 0 1em;
+}
+.custom-logo {
+
+}
+.header-image {
+	max-height: 65vh;
+	overflow: hidden;
 }

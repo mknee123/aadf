@@ -44,7 +44,8 @@ if ( ! function_exists( 'aadf_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'aadf' ),
+			'menu-1' => esc_html__( 'Header', 'aadf' ),
+			'menu-2' => esc_html__( 'Footer', 'aadf' ),
 		) );
 
 		/*
@@ -75,7 +76,7 @@ if ( ! function_exists( 'aadf_setup' ) ) :
 		 */
 		add_theme_support( 'custom-logo', array(
 			'height'      => 250,
-			'width'       => 250,
+			'width'       => 190,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
@@ -179,8 +180,8 @@ function aadf_scripts() {
 	//enqueue google fonts
 	wp_enqueue_style('aadf_fonts', aadf_fonts_url() );
 	wp_enqueue_style( 'aadf-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'gulp-js', get_template_directory_uri() . '/js/app.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'aadf-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	//wp_enqueue_script( 'gulp-js', get_template_directory_uri() . '/js/app.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'aadf-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'aadf-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
