@@ -18,7 +18,7 @@
 		</div>
 		</header><!-- .entry-header -->
 
-		<div class="entry-content">
+		<div class="entry-content content-width-750">
 			<?php
 			the_content();
 

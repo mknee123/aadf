@@ -1076,6 +1076,10 @@ body {
 }
 .footer-info {
 	margin-bottom:2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 /*** PAGES **/
 .site-main {
@@ -1088,8 +1092,52 @@ body {
 	margin:0 auto;
 	padding: 1em 2em;
 	margin-top:100px;
+	border-bottom:20px solid #e4e3df;
 }
 
 .flex-container header {
-	flex-basis: 50%;
+	width: 100%;
+  text-transform: full-width;
+	margin-top: .75rem;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+.flex-container header h1::first-letter{
+	color:#c44e32;
+}
+.content-width-750 {
+	max-width: 750px;
+}
+
+.page-footer {
+	display:flex;
+	justify-content: center;
+
+}
+.footer-nav {
+
+}
+.footer-nav .menu {
+	display: flex;
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.footer-nav .menu li {
+	padding: 0 1em;
+}
+.footer-nav .menu li a {
+	color:white;
+	text-decoration: none;
+}
+.footer-nav .menu li a:hover {
+	border-bottom:2px solid white;
+}
+footer a {
+	color:white;
+	text-decoration: none;
+}
+footer a:hover {
+	color:white;
+	border-bottom:2px solid white;
 }
