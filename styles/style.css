@@ -1024,3 +1024,16 @@ body {
 	max-height: 65vh;
 	overflow: hidden;
 }
+.home-footer {
+	background-image:url('./images/use/Footer.jpg');
+  height: 25vh;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.footer-info {
+	margin-bottom:2em;
+}

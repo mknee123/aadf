@@ -25,6 +25,27 @@ function aadf_customize_register( $wp_customize ) {
 			'render_callback' => 'aadf_customize_partial_blogdescription',
 		) );
 	}
+
+	//Options for custom bg color
+/*	$wp_customize->add_setting('theme_bg_color',  array(
+		//'default-image'          => '',
+		'default' => '#fff',
+		'transport'     => 'postMessage',
+		'type'          => 'theme_mod',
+	  'sanitize_callback' => 'sanitize_hex_color',
+	));
+	//control the custom bg color
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'theme_bg_color', array(
+				'label' => _('Header and footer bg color', 'aadf'),
+				'section' => 'colors',
+				'settings' => 'theme_bg_color'
+			)
+		)
+	);
+	*/
 }
 add_action( 'customize_register', 'aadf_customize_register' );
 
