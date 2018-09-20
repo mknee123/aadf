@@ -1046,9 +1046,27 @@ body {
 	font-family: 'Source Sans Pro',sans-serif;
 	font-weight: 400;
 }
+.icons-container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	position: relative;
+	top: -80px;
+}
+.icons-container a {
+	margin: 1em 2em;
+}
+.icons-container img {
+	max-width: 140px;
+	min-width: 100px;
+	width:100%;
+	background: #f8f6f7;
+
+}
 .home-footer {
 	background-image:url('./images/use/Footer.jpg');
-  height: 25vh;
+  height: 45vh;
 	overflow: hidden;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1058,4 +1076,20 @@ body {
 }
 .footer-info {
 	margin-bottom:2em;
+}
+/*** PAGES **/
+.site-main {
+	margin-top:50px;
+}
+.flex-container {
+	display: flex;
+	background: #fff;
+	max-width: 1200px;
+	margin:0 auto;
+	padding: 1em 2em;
+	margin-top:100px;
+}
+
+.flex-container header {
+	flex-basis: 50%;
 }
