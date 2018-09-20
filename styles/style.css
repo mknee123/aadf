@@ -1002,9 +1002,12 @@ body {
 /**** MK NAVIGATION ****/
 .site-header {
 	display: flex;
+	position: fixed;
 	background: #f8f6f7;
 	align-items: center;
-	/*padding: .5em 1em;*/
+	padding: .5em 1em .5em 0;
+	width: 100%;
+	top:0;
 }
 .site-branding {
 	min-height: 65px;
@@ -1020,9 +1023,28 @@ body {
 .custom-logo {
 
 }
+.header-image-parallax {
+	background-image:url('./images/use/Banner.jpg');
+  height: 60vh;
+	overflow: hidden;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position-y: 100px;
+}
 .header-image {
 	max-height: 65vh;
 	overflow: hidden;
+}
+.entry-header-home {
+	text-align: center;
+	background-color: #e4e3df;
+	padding: 3em 0;
+
+}
+.entry-header-home h1 {
+	font-family: 'Source Sans Pro',sans-serif;
+	font-weight: 400;
 }
 .home-footer {
 	background-image:url('./images/use/Footer.jpg');

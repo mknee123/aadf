@@ -46,6 +46,10 @@
 	</header><!-- #masthead -->
 
 	<?php if ( get_header_image() && is_front_page() ) : ?>
+ <!--comment out since there isn't a real effect for parallax on homepage
+ <div class="header-image-parallax">
+	</div>
+	-->
 		<figure class="header-image">
 	    <div id="site-header">
 	        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
