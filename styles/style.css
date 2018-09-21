@@ -1130,10 +1130,13 @@ body {
 
 .flex-container header {
 	width: 100%;
+	max-width: 350px;
   text-transform: full-width;
 	margin-top: .75rem;
 	font-size: 1.25rem;
 	font-weight: 400;
+	flex-shrink: 0;
+
 }
 .flex-container header h1::first-letter{
 	color:#c44e32;
@@ -1195,7 +1198,10 @@ footer a:hover {
 /***media queries **/
 
 @media (max-width:1024px) {
-
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
 	.home-footer {
 		height: 25vh;
 
@@ -1211,7 +1217,7 @@ footer a:hover {
 @media (max-width:768px) {
 
 	.home-footer {
-		height: 15vh;
+		height: 25vh;
 
 	}
 	.footer-info {
@@ -1222,8 +1228,13 @@ footer a:hover {
 	}
 }
 @media (max-width:600px) {
+	.icons-container a {
+		margin: .5em;
+	}
+	.icons-container img {
 
-
+		min-width: 120px;
+	}
 }
 @media (max-width:480px) {
 
