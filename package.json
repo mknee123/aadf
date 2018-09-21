@@ -32,5 +32,8 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.6"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.2"
   }
 }
