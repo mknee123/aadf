@@ -637,7 +637,7 @@ a:hover, a:active {
 
 /*--------------------------------------------------------------
 ## Menus
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .main-navigation {
 	clear: both;
 	display: block;
@@ -681,7 +681,9 @@ a:hover, a:active {
 }
 
 .main-navigation li {
+
 	float: left;
+
 	position: relative;
 }
 
@@ -689,22 +691,22 @@ a:hover, a:active {
 	display: block;
 	text-decoration: none;
 }
-
-/* Small menu. */
+*/
+/* Small menu.
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
-
+}*/
+/*
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
 	}
 }
-
+*/
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -819,7 +821,7 @@ a:hover, a:active {
 .clear:after,
 .entry-content:after,
 .comment-content:after,
-.site-header:after,
+/*.site-header:after,*/
 .site-content:after,
 .site-footer:after {
 	clear: both;
@@ -1000,9 +1002,12 @@ body {
 	padding: 1em;
 }
 /**** MK NAVIGATION ****/
+/*
 .site-header {
 	display: flex;
-	position: fixed;
+	justify-content: space-between;
+	position:relative;
+	flex-wrap:wrap;
 	background: #f8f6f7;
 	align-items: center;
 	padding: .5em 1em .5em 0;
@@ -1013,20 +1018,60 @@ body {
 .site-branding {
 	min-height: 65px;
 	background: #f8f6f7;
+	flex: 1 1 auto;
 }
 .main-navigation {
 	justify-content: flex-end;
 	display: flex;
 }
+
 .main-navigation li {
 	padding: 0 1em;
+}
+*/
+.site-branding {
+	min-height: 65px;
+	background: #f8f6f7;
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+#site-navigation {
+	/*background:#c44e32;*/
+	padding: .25em 0;
+}
+.main-navigation {
+	display: block;
+	clear:left;
+}
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.main-navigation ul ul {
+	display:none;
+	top:1.5em;
+	z-index: 99999;
+}
+.main-navigation ul ul ul {
+	top:0;
 }
 .main-navigation li a {
 	color:black;
 	transition: color ease .75s;
+	text-decoration: none;
+	padding: 1em .25em;
 }
 .main-navigation li a:hover {
 	color:#c44e32;
+}
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
 }
 .menu-toggle {
 	margin-right:1.5em;
@@ -1037,6 +1082,9 @@ body {
   position: relative;
 	background: transparent;
 	border:	none;
+	margin: 0 auto;
+	text-align: center;
+
 }
 .menu-toggle:before {
 	content: "";
@@ -1047,6 +1095,8 @@ body {
 	height: 1.35em;
 	border-top: 0.75em double #c44e32;
 	border-bottom: 0.25em solid #c44e32;
+	font-size:1rem;
+	color:white;
 }
 
 .custom-logo {
@@ -1063,8 +1113,8 @@ body {
 }
 .header-image {
 	max-height: 65vh;
-	overflow: hidden;
-	margin-top:4em;
+	/*overflow: hidden;
+	margin-top:4em;*/
 }
 .entry-header-home {
 	text-align: center;
@@ -1196,7 +1246,43 @@ footer a:hover {
 }
 
 /***media queries **/
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+		position:relative;
+		flex-wrap:wrap;
+		background: #f8f6f7;
+		align-items: center;
+		padding: .5em 0;
 
+	}
+	.site-branding {
+		min-height: 65px;
+		background: #f8f6f7;
+		width:35%;
+		flex:0 1 auto;
+	}
+	#site-navigation {
+		width:65%;
+		flex:0 1 auto;
+		background: transparent;
+	}
+	.main-navigation li {
+		padding: 0 .5em;
+	}
+}
+
+@media screen and (min-width:600px) {
+
+}
 @media (max-width:1024px) {
 	.flex-container {
 		display: flex;
@@ -1215,10 +1301,8 @@ footer a:hover {
 }
 
 @media (max-width:768px) {
-
 	.home-footer {
 		height: 25vh;
-
 	}
 	.footer-info {
 		margin-bottom: 1em;
@@ -1232,7 +1316,6 @@ footer a:hover {
 		margin: .5em;
 	}
 	.icons-container img {
-
 		min-width: 120px;
 	}
 }

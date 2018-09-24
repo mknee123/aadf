@@ -24,17 +24,15 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aadf' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo(); ?>
-
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding" >
+			<?php	the_custom_logo(); ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false">
+		<nav id="site-navigation" class="main-navigation"  role="navigation">
 
-				<?php esc_html_e( ' ', 'aadf' ); ?>
+			<button class="menu-toggle" aria-controls="header-menu" aria-expanded="false">
+				<?php esc_html_e( '', 'aadf' ); ?>
 			</button>
 			<?php
 			wp_nav_menu( array(
@@ -43,6 +41,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
 
 	<?php if ( get_header_image() && is_front_page() ) : ?>
