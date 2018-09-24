@@ -1259,6 +1259,9 @@ footer a:hover {
 		max-width: 140px;
 		width: 100%;
 	}
+	.site-main {
+		margin-top:0px;
+	}
 }
 @media screen and (min-width: 37.5em) {
 
@@ -1302,7 +1305,9 @@ footer a:hover {
 	.flex-container {
 		display: flex;
 		flex-direction: column;
+		margin-top:20px;
 	}
+
 	.home-footer {
 		height: 25vh;
 
