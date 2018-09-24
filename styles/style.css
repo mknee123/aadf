@@ -1060,11 +1060,13 @@ body {
 .main-navigation ul ul ul {
 	top:0;
 }
+.main-navigation li {
+	padding: .75em .0;
+}
 .main-navigation li a {
 	color:black;
-	transition: color ease .75s;
+	transition: color ease .25s;
 	text-decoration: none;
-	padding: 1em .25em;
 }
 .main-navigation li a:hover {
 	color:#c44e32;
@@ -1072,27 +1074,30 @@ body {
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	text-align: center;
 }
 .menu-toggle {
 	margin-right:1.5em;
 	padding: 1em;
 }
 .menu-toggle {
-  padding-left: 1.25em;
+  width:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
   position: relative;
 	background: transparent;
 	border:	none;
 	margin: 0 auto;
 	text-align: center;
-
+	padding: 0;
 }
 .menu-toggle:before {
 	content: "";
 	position: absolute;
-	top: 0.25em;
-	left: 0;
+	right: 0;
 	width: 2em;
-	height: 1.35em;
+	height: 1.25em;
 	border-top: 0.75em double #c44e32;
 	border-bottom: 0.25em solid #c44e32;
 	font-size:1rem;
@@ -1246,7 +1251,17 @@ footer a:hover {
 }
 
 /***media queries **/
+@media screen and (max-width: 37.5em) {
+	.desktop {
+		display: none;
+	}
+	.site-branding img {
+		max-width: 140px;
+		width: 100%;
+	}
+}
 @media screen and (min-width: 37.5em) {
+
 	.menu-toggle {
 		display: none;
 	}
