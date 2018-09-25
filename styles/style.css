@@ -1130,7 +1130,9 @@ body {
 .entry-header-home h1 {
 	font-family: 'Source Sans Pro',sans-serif;
 	font-weight: 400;
+	visibility: hidden;
 }
+
 .icons-container {
 	display:flex;
 	justify-content: center;
@@ -1151,6 +1153,10 @@ body {
 	min-width: 100px;
 	width:100%;
 	background: #f8f6f7;
+}
+.icon {
+	visibility: hidden;
+
 }
 .home-footer {
 	background-image:url('./images/use/Footer.jpg');
@@ -1187,17 +1193,20 @@ body {
 	width: 100%;
 	max-width: 350px;
   text-transform: full-width;
+	word-wrap: break-word;
 	margin-top: .75rem;
 	font-size: 1.25rem;
 	font-weight: 400;
 	flex-shrink: 0;
 
 }
-.flex-container header h1::first-letter{
+.flex-container header .entry-title-subpage::first-letter{
 	color:#c44e32;
+	visibility: hidden;
 }
 .content-width-750 {
 	max-width: 750px;
+	visibility: hidden;
 }
 
 .page-footer {
