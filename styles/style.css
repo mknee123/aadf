@@ -1118,8 +1118,8 @@ body {
 }
 .header-image {
 	max-height: 65vh;
-	/*overflow: hidden;
-	margin-top:4em;*/
+	overflow: hidden;
+/*	margin-top:4em;*/
 }
 .entry-header-home {
 	text-align: center;
@@ -1251,6 +1251,12 @@ footer a:hover {
 }
 
 /***media queries **/
+@media screen and (max-width: 52.75em) {
+	.hidden-xs {
+		visibility: hidden;
+		display: none;
+	}
+}
 @media screen and (max-width: 37.5em) {
 	.desktop {
 		display: none;
@@ -1271,6 +1277,10 @@ footer a:hover {
 	.main-navigation ul {
 		display: flex;
 		justify-content: flex-end;
+		align-items:center;
+	}
+	.main-navigation ul li:last-child a {
+		cursor:auto;
 	}
 	.site-header {
 		display: flex;

@@ -46,6 +46,7 @@ if ( ! function_exists( 'aadf_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Header', 'aadf' ),
 			'menu-2' => esc_html__( 'Footer', 'aadf' ),
+			'menu-3' => esc_html__( 'Home', 'aadf' ),
 		) );
 
 		/*

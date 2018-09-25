@@ -39,8 +39,8 @@
 			</button>
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'header-menu',
+				'theme_location' => 'menu-3',
+				'menu_id'        => 'home-menu',
 			) );
 			?>
 		</nav><!-- #site-navigation -->
@@ -54,8 +54,9 @@
 	-->
 		<figure class="header-image">
 	    <div id="site-header">
+	        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 	            <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-
+	        </a>
 	    </div>
 		</figure><!--end header image -->
 <?php endif; ?>
