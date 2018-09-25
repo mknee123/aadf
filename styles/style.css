@@ -616,11 +616,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	/*color: royalblue;*/
+	color: #3e7ac2;
 }
 
 a:visited {
-	color: purple;
+	/*color: purple;*/
+	color: #792330;
 }
 
 a:hover, a:focus, a:active {
@@ -1216,18 +1218,20 @@ body {
 	align-items: center;
 }
 .page-footer .footer-nav .menu li a{
-	color:black;
+	color:#3e7ac2;
 	text-decoration: none;
+	transition: all ease .5s;
 }
 .page-footer .footer-nav .menu li a:hover{
-	border-bottom:2px solid black;
+	border-bottom:0 solid transparent;
+	color:#c44e32;
 }
 .footer-email {
-	color:#4169e1;
-
+	color:#3e7ac2;
+	transition: all ease .5s;
 }
 .footer-email:hover {
-	color:black;
+	color:#c44e32;
 	border-bottom:0 solid transparent;
 }
 .footerDivider {
