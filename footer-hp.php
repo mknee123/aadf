@@ -38,7 +38,7 @@
 </div><!-- #page -->
 <script>
 		ScrollReveal().reveal('.entry-header-home h1', { delay: 500 });
-		ScrollReveal().reveal('.icon', { interval: 300, delay: 1000 });
+		ScrollReveal().reveal('.icon', { interval: 400, delay: 1000 , easing: 'ease-in-out' });
 </script>
 <?php wp_footer('hp'); ?>
 

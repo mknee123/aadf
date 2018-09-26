@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aadf' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="banner" style="max-width:1200px; width:100%; margin:0 auto;">
 
 		<div class="site-branding desktop" >
 			<?php	the_custom_logo(); ?>

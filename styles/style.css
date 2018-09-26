@@ -1187,7 +1187,7 @@ body {
 	max-width: 1200px;
 	margin:0 auto;
 	padding: 1em 2em;
-	margin-top:100px;
+	margin-top:20px;
 	border-bottom:20px solid #e4e3df;
 }
 
@@ -1235,7 +1235,7 @@ body {
 	border-bottom:0 solid transparent;
 }
 .footerDivider {
-	margin: 2em 0;
+	margin: 1em 0;
 }
 .footer-nav .menu {
 	display: flex;
