@@ -14,24 +14,17 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+		<div class="footer-container page-footer">
 			<nav class="footer-nav">
 				<?php	wp_nav_menu( array( 'theme_location' => 'menu-2',	));	?>
 			</nav>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'aadf' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'aadf' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'aadf' ), 'aadf', '<a href="http://mirandaknee.com">Miranda_Knee</a>' );
-				?>
-		</div><!-- .site-info -->
 
-
+			<img class="footerDivider" src="/wp-content/themes/aadf/images/use/FooterDivider_Orange.png" alt="dotted divider orange graphic" />
+			<a class="footer-email" href="mailto:aadf_pgh@alleghenyconference.org">aadf_pgh@alleghenyconference.org</a>
+			<div class="site-info text-center screen-reader-text text-center invisible">
+				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'aadf' ), 'aadf', '<a href="http://mirandaknee.com/" rel="designer">Miranda Knee</a>' ); ?>
+			</div><!-- .site-screenreader-info -->
+		</div><!--close of footer-container-->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
