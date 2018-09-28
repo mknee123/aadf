@@ -27,7 +27,20 @@
 		</div><!--close of footer-container-->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<script>
+	ScrollReveal({ distance: '15px' });
+	ScrollReveal().reveal('.entry-title-subpage', {
+			origin: 'left',
+			opacity: 0,
+		  easing: 'cubic-bezier(0.5, 0, .5, 1)'
+	 });
+	 ScrollReveal().reveal('.content-width-750', {
+		 origin: 'right',
+		 opacity: 0,
+		 easing: 'cubic-bezier(0.5, 0, .5, 1)'
+	});
 
+</script>
 <?php wp_footer(); ?>
 
 </body>

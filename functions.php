@@ -46,6 +46,7 @@ if ( ! function_exists( 'aadf_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Header', 'aadf' ),
 			'menu-2' => esc_html__( 'Footer', 'aadf' ),
+			'menu-3' => esc_html__( 'Home', 'aadf' ),
 		) );
 
 		/*
@@ -182,7 +183,10 @@ function aadf_scripts() {
 	wp_enqueue_style( 'aadf-style', get_stylesheet_uri() );
 	//wp_enqueue_script( 'gulp-js', get_template_directory_uri() . '/js/app.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'aadf-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
-
+  wp_localize_script('aadf-navigation', 'aadfScreenReaderText', array(
+			'expand' => __( 'Expand child menu', 'aadf'),
+			'collaspe' => __( 'Collapse child menu', 'aadf'),
+	));
 	wp_enqueue_script( 'aadf-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

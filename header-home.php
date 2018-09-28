@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<script src="https://unpkg.com/scrollreveal"></script>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -24,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aadf' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner" style="max-width:1200px; width:100%; margin:0 auto;">
+	<header id="masthead" class="site-header" role="banner">
 
 		<div class="site-branding desktop" >
 			<?php	the_custom_logo(); ?>
@@ -39,8 +40,8 @@
 			</button>
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'header-menu',
+				'theme_location' => 'menu-3',
+				'menu_id'        => 'home-menu',
 			) );
 			?>
 		</nav><!-- #site-navigation -->
@@ -54,8 +55,9 @@
 	-->
 		<figure class="header-image">
 	    <div id="site-header">
+	        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 	            <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-
+	        </a>
 	    </div>
 		</figure><!--end header image -->
 <?php endif; ?>

@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="flex-container">
 		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php the_title( '<h1 class="entry-title entry-title-subpage">', '</h1>' ); ?>
 			<div class="thumb-container">
 			<?php aadf_post_thumbnail(); ?>
 		</div>

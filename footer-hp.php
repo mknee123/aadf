@@ -21,7 +21,7 @@
 				<nav class="footer-nav">
 					<?php	wp_nav_menu( array( 'theme_location' => 'menu-2',	));	?>
 				</nav>
-				
+
 				<img class="footerDivider" src="./wp-content/themes/aadf/images/use/FooterDivider.png" alt="dotted divider graphic" />
 				<a href="mailto:aadf_pgh@alleghenyconference.org">aadf_pgh@alleghenyconference.org</a>
 				<div class="site-info text-center screen-reader-text text-center invisible">
@@ -36,7 +36,10 @@
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+<script>
+		ScrollReveal().reveal('.entry-header-home h1', { delay: 500 });
+		ScrollReveal().reveal('.icon', { interval: 400, delay: 1000 , easing: 'ease-in-out' });
+</script>
 <?php wp_footer('hp'); ?>
 
 </body>
