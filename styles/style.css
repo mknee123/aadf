@@ -1204,7 +1204,7 @@ body {
 }
 .flex-container header .entry-title-subpage::first-letter{
 	color:#c44e32;
-	visibility: hidden;
+	
 }
 .content-width-750 {
 	max-width: 750px;
