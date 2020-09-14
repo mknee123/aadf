@@ -22,3 +22,4 @@ wp-content/plugins/hello.php
 node_modules/
 # Optional npm cache directory
 .npm
+_notes
